@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function fun(){
+let A=new XMLHttpRequest();
+A.open('Get','https://dummy.restapiexample.com/api/v1/employees');
+A.responseType="json";
+A.send();
+A.onload=function(){
+
+if(A.status==200){
+	window.alert("Succes.");
+	let B=A.response;
+	console.log(B);
+	var temp=JSON.stringify(B);
+	document.getElementById('para1').innerHTML=temp;
+	console.log(B.data[0].id)
+}
+}
+}
+
+
+</script>
+</head>
+<body>
+<button onclick="fun()">Button</button></body>
+<p id="para1"> </p>
+
+
+</body>
+</html>

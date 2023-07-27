@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> take input & submit <\h1>
+
+<script>
+
+let a = prompt("enter a number: ");
+let b = prompt("enter second number : ");
+let c = a + b;
+consol.log("the sum is : " , c);
+
+
+<\script>
+
+
+<\body>
+<\html>
